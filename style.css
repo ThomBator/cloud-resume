@@ -1,0 +1,199 @@
+/*Global styling*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgb(128, 211, 238), rgb(216, 192, 192));
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+a, summary, i {
+    cursor: pointer;
+}
+
+h1 {
+    text-shadow: 1px 2px 2px rgb(63, 59, 59);
+}
+
+h2 {
+    margin-bottom: .5rem;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+
+header, section{
+
+
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #ffffffaa;
+    box-shadow: 10px 5px 5px #1ab4cb55;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+@media  screen and (min-width: 600px)
+{
+    header, section {
+        width: 72%;
+    }
+
+    .headerFlex {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+        gap: 1rem;
+
+
+
+
+    }
+
+    .headerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .headerIcons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1;
+    }
+
+
+
+}
+
+
+/*Nav Styling*/
+nav {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+
+    margin-right: 2rem;
+    transition: transform .2s;
+
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(63, 59, 59);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: rgb(179, 173, 173);
+
+}
+
+/*Header styling*/
+
+section, details {
+    transition: transform .2s;
+}
+
+ header:hover, section:hover, details:hover {
+    transform: scale(1.01);
+}
+
+i {
+    margin-right: 1rem;
+    transition: transform .2s;
+}
+
+i:hover{
+    color:rgb(179, 173, 173);
+    transform: scale(1.3);
+}
+
+.headerText {
+    margin-bottom: 1rem;
+}
+
+.headerImage {
+
+    max-width: 50%;
+
+    margin-bottom: 1rem;
+}
+.headerImage img {
+
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 15vh;
+    box-shadow: 10px 5px 5px #7acedbcc;
+    transition: transform .2s;
+
+}
+
+.headerImage img:hover {
+    transform: scale(1.02);
+}
+
+/* Section Styling*/
+
+.sectionContent, .headerFlex, nav {
+    margin-left: 10%;
+}
+
+/*About me stying*/
+
+details {
+    margin-bottom: 1rem;
+}
+.about-div{
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+
+
+summary {
+    margin-bottom: 0.5rem;
+}
+
+summary:hover {
+    color:rgb(179, 173, 173);
+}
+
+details p {
+    margin-left: 0rem 1rem 0rem 1rem;
+
+
+}
